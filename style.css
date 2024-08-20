@@ -75,6 +75,11 @@
     background-color: #fff;
 }
 
+#favorito {
+    padding: 80px 20px;
+    background-color: #fff;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
@@ -798,4 +803,33 @@ body{
         font-size: 13px;
     }
 
+}
+
+.tarjetas-contenedorr {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.tarjetaa {
+    width: 23%;
+    margin: 10px 0;
+    background-color: #d4f9d4;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.tarjetaa img {
+    width: 100%;
+    height: auto;
+}
+
+.tarjeta .descripcion {
+    padding: 15px;
+    font-size: 16px;
+    color: #333;
 }
