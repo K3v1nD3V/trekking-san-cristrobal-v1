@@ -5,6 +5,8 @@
     --terceary-color: #d4f9d4;
 }
 /* Sobre Nosotros  */
+/* Sobre Nosotros  */
+/* Sobre Nosotros  */
 #sobre-nosotros {
     font-family: 'Ubuntu', sans-serif;
     padding: 80px 20px;
@@ -12,8 +14,6 @@
 }
 
 .sobre_nosotros-container {
-    display: flex;
-    flex-direction: column;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -23,34 +23,25 @@
 }
 
 .sobre-nosotros_containt{
-    display: grid;
-    grid-template-columns: repeat(2 1fr);
+    display: flex;
+    justify-content: center;
+    gap: 100px
 }
 
 .sobre-nosotros_texto {
-    
     flex: 1;
     padding-right: 50px;
 }
 
-.sobre-nosotro_texto h2 {
-    color:var(--primary-color);
+.sobre_nosotros-container h2 {
+    text-align: center;
+    color:darkgreen;
     font-size: 2.8em;
     margin-bottom: 20px;
     font-weight: bold;
     text-align: center;
 }
 
-.sobre-nosotro_texto h2::after {
-    content: '';
-    width: 80px;
-    height: 4px;
-    
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    border-radius: 2px;
-}
 
 .sobre-nosotro_texto p {
     font-size: 1.15em;
@@ -60,14 +51,15 @@
 }
 
 .sobre-nosotro_imagen {
-    height: auto;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
 
 .sobre-nosotro_imagen img {
-    max-width: 100%;
+    width: 350px;
     height: 100%;
     border-radius: 12px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
@@ -77,11 +69,9 @@
 #servicios {
     padding: 80px 20px;
     background-color: #fff;
-}
+    border-bottom: 3px solid var(--primary-color);
+    border-top: 3px solid var(--primary-color);
 
-#favorito {
-    padding: 80px 20px;
-    background-color: #fff;
 }
 
 .container {
@@ -92,7 +82,7 @@
 }
 
 h2 {
-    color: var(--primary-color);
+    color: darkgreen;
     font-size: 2.8em;
     margin-bottom: 50px;
     font-weight: 700;
@@ -125,22 +115,20 @@ h2 {
     margin-bottom: 20px;
 }
 
-.icono svg {
+.icono img {
     max-width: 80px;
-    height: 70px;
-    width: 70px;
+    height: auto;
 }
 
 .tarjeta h3 {
     font-size: 1.8em;
     margin-bottom: 15px;
-    color: var(--primary-color);
 }
 
 .tarjeta p {
     font-size: 1.1em;
     line-height: 1.6;
-}
+}8
 /* ------------------------------------ */
 
 /* Estilos Responsivos */
@@ -512,7 +500,7 @@ footer .right p{
 
 .carrrusel_slider-box{
     width: 1280px;
-    height: auto;
+    height: 800px;
     margin: 50px auto 50px;
     overflow: hidden;
 }
@@ -555,6 +543,9 @@ footer .right p{
 .carrrusel_slider-box img{
     width: 100%;
 }
+.show-more-btn {
+    display: none;
+  }
 
 @keyframes slider{
     0% {margin-left: 0;}
@@ -570,6 +561,7 @@ footer .right p{
     100% {margin-left: -300%;}
 }
 
+
 @media (max-width:991px){
 body{
     padding: 30px;
@@ -582,6 +574,9 @@ body{
     .carrrusel_slider-texto{
         top: 50px;
         padding: 0 25px;
+        margin-top: 240px;
+        margin-left: 10px;
+        margin-right: 10px;
     }
 
     .carrrusel_slider-texto h2{
@@ -590,8 +585,30 @@ body{
     }
 
     .carrrusel_slider-texto p{
-        font-size: 15px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        max-width: 500px; 
     }
+
+    .show-more-btn {
+        display: inline-block;
+      }
+
+    .show-more-btn {
+        background-color: var(--primary-color);
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        font-size: 16px;
+        cursor: pointer;
+        margin: 10px;
+      }
+      
+      .show-more-btn:hover {
+        background-color: #3e8e41;
+      }
+    
 }
 
 @media screen and (max-width: 1400px) {
@@ -782,6 +799,7 @@ body{
 
     footer{
         padding: 40px 20px;
+
     }
 
 }
@@ -807,11 +825,20 @@ body{
 
 }
 
+#favorito{
+    height: 650px;
+    border-top: 3px solid var(--primary-color);
+
+
+}
+
 .tarjetas-contenedorr {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
     gap: 15px;
+    
+    
 }
 
 .tarjetaa {
