@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap');
-
+:root{
+    --primary-color: #1e5922;
+    --secundary-color: #3ba842;
+    --terceary-color: #d4f9d4;
+}
 /* Sobre Nosotros  */
 #sobre-nosotros {
     font-family: 'Ubuntu', sans-serif;
@@ -30,7 +34,7 @@
 }
 
 .sobre-nosotro_texto h2 {
-    color:darkgreen;
+    color:var(--primary-color);
     font-size: 2.8em;
     margin-bottom: 20px;
     font-weight: bold;
@@ -88,7 +92,7 @@
 }
 
 h2 {
-    color: darkgreen;
+    color: var(--primary-color);
     font-size: 2.8em;
     margin-bottom: 50px;
     font-weight: 700;
@@ -121,14 +125,16 @@ h2 {
     margin-bottom: 20px;
 }
 
-.icono img {
+.icono svg {
     max-width: 80px;
-    height: auto;
+    height: 70px;
+    width: 70px;
 }
 
 .tarjeta h3 {
     font-size: 1.8em;
     margin-bottom: 15px;
+    color: var(--primary-color);
 }
 
 .tarjeta p {
@@ -148,11 +154,7 @@ h2 {
         margin-bottom: 30px;
     }
 }
-:root{
-    --primary-color: #1e5922;
-    --secundary-color: #3ba842;
-    --terceary-color: #d4f9d4;
-}
+
 *{
     margin: 0;
     padding: 0;
@@ -809,6 +811,7 @@ body{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+    gap: 15px;
 }
 
 .tarjetaa {
@@ -821,6 +824,11 @@ body{
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
     transition: transform 0.3s ease;
+    min-width: 270px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between
 }
 
 .tarjetaa img {
