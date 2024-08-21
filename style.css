@@ -128,7 +128,7 @@ h2 {
 .tarjeta p {
     font-size: 1.1em;
     line-height: 1.6;
-}8
+}
 /* ------------------------------------ */
 
 /* Estilos Responsivos */
@@ -201,8 +201,12 @@ nav .login button.signup{
     margin-right: 14px;
 }
 
+.menu-burger{
+    display: none;
+}
+
 header{
-    padding: 0 80px;
+    padding: 25px;
     height: calc(100vh - 80px);
     display: flex;
     align-items: center;
@@ -242,7 +246,7 @@ header .left a{
 }
 
 header img{
-    width: 600px;
+    max-width: 600px;
 }
 
 h2.separator{
@@ -563,9 +567,6 @@ footer .right p{
 
 
 @media (max-width:991px){
-body{
-    padding: 30px;
-}
 
     .carrrusel_slider-box {
         width: 100%;
@@ -614,7 +615,6 @@ body{
 @media screen and (max-width: 1400px) {
     
     nav,
-    header,
     h2.separator,
     .sell-nft,
     .nft-shop,
@@ -755,7 +755,6 @@ body{
 @media screen and (max-width: 768px) {
     
     nav,
-    header,
     h2.separator,
     .sell-nft,
     .nft-shop,
@@ -763,10 +762,17 @@ body{
         padding: 0 20px;
     }
 
-    nav a.logo{
+    nav .links{
         display: none;
     }
 
+    .login{
+        display: none;
+    }
+
+    .menu-burger{
+        display: block;
+    }
     nav .links a{
         font-size: 12px;
     }
@@ -780,17 +786,18 @@ body{
     }
 
     header .left h1{
-        font-size: 36px;
+        font-size: 40px;
     }
 
     header .left p{
-        font-size: 14px;
+        font-size: 22px;
+        margin: 20px 0;
     }
 
     header .left a{
-        padding: 6px;
-        width: 160px;
-        font-size: 14px;
+        padding: 10px;
+        width: 200px;
+        font-size: 18px;
     }
 
     h2.separator{
@@ -809,7 +816,6 @@ body{
     header .left h1{
         font-size: 30px;
     }
-
     .sell-nft .item{
         width: 100%;
     }
