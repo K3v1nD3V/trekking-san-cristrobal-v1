@@ -53,7 +53,7 @@ body{
 .sobre-nosotros_containt{
     display: flex;
     justify-content: center;
-    gap: 100px
+    gap: 100px;
 }
 
 .sobre-nosotros_texto {
@@ -153,6 +153,10 @@ body{
 
     .tarjeta {
         margin-bottom: 30px;
+    }
+
+    .sobre-nosotros_containt{
+        flex-wrap: wrap;
     }
 }
 nav{
@@ -531,6 +535,7 @@ footer .right p{
     
 }
 
+
 .carrrusel_slider-texto h2{
     font-size: 45px;
     margin-bottom: 35px;
@@ -543,6 +548,8 @@ footer .right p{
 .show-more-btn {
     display: none;
   }
+
+
 
 @keyframes slider{
     0% {margin-left: 0;}
