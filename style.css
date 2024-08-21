@@ -4,9 +4,37 @@
     --secundary-color: #3ba842;
     --terceary-color: #d4f9d4;
 }
-/* Sobre Nosotros  */
-/* Sobre Nosotros  */
-/* Sobre Nosotros  */
+
+h2 {
+    text-align: center;
+    color:darkgreen;
+    font-size: 2.8em;
+    margin-bottom: 50px;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+img{
+    object-fit: cover;
+}
+
+body{
+    background-color: var(--terceary-color);
+}
+
 #sobre-nosotros {
     font-family: 'Ubuntu', sans-serif;
     padding: 80px 20px;
@@ -31,15 +59,6 @@
 .sobre-nosotros_texto {
     flex: 1;
     padding-right: 50px;
-}
-
-.sobre_nosotros-container h2 {
-    text-align: center;
-    color:darkgreen;
-    font-size: 2.8em;
-    margin-bottom: 20px;
-    font-weight: bold;
-    text-align: center;
 }
 
 
@@ -81,13 +100,6 @@
     text-align: center;
 }
 
-h2 {
-    color: darkgreen;
-    font-size: 2.8em;
-    margin-bottom: 50px;
-    font-weight: 700;
-}
-
 .tarjetas {
     display: flex;
     justify-content: space-between;
@@ -105,6 +117,7 @@ h2 {
     padding: 10px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
+    margin: 0 auto;
 }
 
 .tarjeta:hover {
@@ -115,9 +128,9 @@ h2 {
     margin-bottom: 20px;
 }
 
-.icono img {
-    max-width: 80px;
-    height: auto;
+.icono svg {
+    width: 50px;
+    height: 50px;
 }
 
 .tarjeta h3 {
@@ -142,27 +155,6 @@ h2 {
         margin-bottom: 30px;
     }
 }
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Ubuntu', sans-serif;
-}
-
-a{
-    text-decoration: none;
-    color: #000;
-}
-
-img{
-    object-fit: cover;
-}
-
-body{
-    background-color: var(--terceary-color);
-}
-
 nav{
     padding: 0 80px;
     display: flex;
@@ -451,6 +443,7 @@ footer{
     display: flex;
     align-items: center;
     justify-content: space-between;
+    margin-top: 40px;
 }
 
 footer h3{
@@ -832,10 +825,7 @@ footer .right p{
 }
 
 #favorito{
-    height: 650px;
     border-top: 3px solid var(--primary-color);
-
-
 }
 
 .tarjetas-contenedorr {
