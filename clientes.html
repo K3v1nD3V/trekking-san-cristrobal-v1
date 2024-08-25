@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trekking San Cristóbal</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <i class="fas fa-hiking fa-2x"></i></span>
+                        <span class="title"><b>Trekking San Cristóbal</b></span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="home-outline"></ion-icon>
+                        </span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Clientes</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                        </span>
+                        <span class="title">Servicios</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Mensajes</span>
+                    </a>
+                </li>
+
+               
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Configuración</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Ayuda</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Salir</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Buscar">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="user">
+                    <img src="assets/imgs/customer01.jpg" alt="">
+                </div>
+            </div>
+
+
+
+            <!-- ================ Services List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h1>Clientes</h1>
+                        <button class="btn descargar" onclick="descargarPDF()">
+                            <ion-icon name="download-outline"></ion-icon>Descargar PDF</button> 
+                            
+                        <button class="btn add-new" onclick="agregarServicio()">
+                            <ion-icon name="add-circle-outline"></ion-icon>Agregar Cliente</button>
+                    </div>
+            
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>ID</td>
+                                <td>Documento</td>
+                                <td>Nombre</td>
+                                <td>Apellido</td>
+                                <td>Correo</td>
+                                <td>Teléfono</td>
+                                <td>Estado</td>
+                                <td>Acciones</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>1001709975</td>
+                                <td>Ximena</td>
+                                <td>Castañeda</td>
+                                <td>ximena25@soy.sena.edu.co</td>
+                                <td>3122934309</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>02</td>
+                                <td>42800156</td>
+                                <td>Orbey</td>
+                                <td>Aguirre</td>
+                                <td>aguirre_orbey@soy.sena.edu.co</td>
+                                <td>3112387765</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>03</td>
+                                <td>100067980</td>
+                                <td>Ruben</td>
+                                <td>Restrepo</td>
+                                <td>rubenrestre_po@soy.sena.edu.co</td>
+                                <td>3112387765</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>04</td>
+                                <td>203045897</td>
+                                <td>Rosa</td>
+                                <td>Florez</td>
+                                <td>florezRosa@soy.sena.edu.co</td>
+                                <td>3206653030</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
+                                </td>
+                            </tr>
+
+
+                            <tr>
+                                <td>05</td>
+                                <td>1017202889</td>
+                                <td>Daniel</td>
+                                <td>Navarro</td>
+                                <td>navarrodaniel@soy.sena.edu.co</td>
+                                <td>3005528856</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>06</td>
+                                <td>1014889456</td>
+                                <td>Dario</td>
+                                <td>Galvis</td>
+                                <td>galvissand@soy.sena.edu.co</td>
+                                <td>3112387765</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>07</td>
+                                <td>104067445</td>
+                                <td>Maria</td>
+                                <td>Cartagena</td>
+                                <td>mariacarta_@soy.sena.edu.co</td>
+                                <td>3112387765</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+
+             
+    <!-- =========== Scripts =========  -->
+    <script src="assets/js/main.js"></script>
+    <script src="services.js"></script>
+
+    <!-- ====== ionicons ======= -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
