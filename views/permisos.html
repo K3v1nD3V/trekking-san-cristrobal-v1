@@ -43,7 +43,7 @@
                         <span class="title">Paquetes</span>
                     </a>
                 </li>
-
+                
                 <li>
                     <a href="./destinos.html">
                         <span class="icon">
@@ -69,6 +69,7 @@
                         </span>
                         <span class="title">Servicios</span>
                     </a>
+                </li>
 
 
                 <li>
@@ -134,7 +135,7 @@
             <div class="details">
                 <div class="recentOrders">
                     <div class="cardHeader">
-                        <h1>Gestión de Servicios</h1>
+                        <h1>Gestión de Permisos</h1>
 
                         <div class="cardHeader_buttons">
 
@@ -156,20 +157,20 @@
                     <table>
                         <thead>
                             <tr>
+                                <td>ID Permiso</td>
                                 <td>Nombre</td>
-                                <td>Precio</td>
+                                <td>Descripción</td>
                                 <td>Estado</td>
-                                <td>Categoría</td>
                                 <td>Acciones</td>
                             </tr>
                         </thead>
 
                         <tbody>
                             <tr>
-                                <td>Desayuno</td>
-                                <td>$12000</td>
+                                <td>01</td>
+                                <td>Gestión de Usuarios</td>
+                                <td>Gestionar información de usuarios.</td>
                                 <td><span class="status delivered">Activo</span></td>
-                                <td>Alimentación</td>
                                 <td>
                                     <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
                                     <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
@@ -177,57 +178,57 @@
                             </tr>
 
                             <tr>
-                                <td>Almuerzo</td>
-                                <td>$17000</td>
+                                <td>02</td>
+                                <td>Gestión de Acceso</td>
+                                <td>Gestionar accesos.</td>
                                 <td><span class="status delivered">Activo</span></td>
-                                <td>Alimentación</td>
                                 <td>
-                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Almuerzo')"></ion-icon>
-                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Almuerzo')"></ion-icon>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td>Desayuno + Almuerzo</td>
-                                <td>$22000</td>
+                                <td>03</td>
+                                <td>Gestión de Servicios</td>
+                                <td>Gestionar información de los servicios.</td>
                                 <td><span class="status delivered">Activo</span></td>
-                                <td>Alimentación</td>
                                 <td>
-                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno + Almuerzo')"></ion-icon>
-                                    <ion-icon name="trash-outline"  class="icon-large" onclick="eliminarServicio('Desayuno + Almuerzo')"></ion-icon>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td>Micro Bus</td>
-                                <td>$50000</td>
+                                <td>04</td>
+                                <td>Gestión de Empleados</td>
+                                <td>Gestionar información de empleados.</td>
                                 <td><span class="status delivered">Activo</span></td>
-                                <td>Transporte</td>
                                 <td>
-                                    <ion-icon name="create-outline"  class="icon-large" onclick="editarServicio('Micro Bus')"></ion-icon>
-                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Micro Bus')"></ion-icon>
-                                </td>
-                            </tr>
-
-                             <tr>
-                                <td>Bus</td>
-                                <td>$30000</td>
-                                <td><span class="status delivered">Activo</span></td>
-                                <td>Transporte</td>
-                                <td>
-                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Bus')"></ion-icon>
-                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Bus')"></ion-icon>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
                                 </td>
                             </tr>
 
                             <tr>
-                                <td>Guía Adicional</td>
-                                <td>$100000</td>
+                                <td>05</td>
+                                <td>Gestión de Clientes</td>
+                                <td>Gestionar información de los clientes.</td>
                                 <td><span class="status delivered">Activo</span></td>
-                                <td>Personal</td>
                                 <td>
-                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Guía Adicional')"></ion-icon>
-                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Guía Adicional')"></ion-icon>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>06</td>
+                                <td>Gestión de Ventas</td>
+                                <td>Gestionar información de ventas.</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
                                 </td>
                             </tr>
                         </tbody>
