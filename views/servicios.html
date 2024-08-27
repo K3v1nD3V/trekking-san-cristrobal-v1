@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Trekking San Cristóbal</title>
     <!-- ======= Styles ====== -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="../assets_/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 
     
@@ -96,9 +96,7 @@
         <!-- ========================= Main ==================== -->
         <div class="main">
             <div class="topbar">
-                <div class="toggle">
-                    <ion-icon name="menu-outline"></ion-icon>
-                </div>
+                
 
                 <div class="search">
                     <label>
@@ -107,8 +105,8 @@
                     </label>
                 </div>
 
-                <div class="user">
-                    <img src="assets/imgs/customer01.jpg" alt="">
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
                 </div>
             </div>
 
@@ -119,11 +117,17 @@
                 <div class="recentOrders">
                     <div class="cardHeader">
                         <h1>Gestión de Servicios</h1>
-                        <button class="btn descargar" onclick="descargarPDF()">
-                            <ion-icon name="download-outline"></ion-icon>Descargar PDF</button> 
 
-                        <button class="btn add-new" onclick="agregarServicio()">
-                            <ion-icon name="add-circle-outline"></ion-icon>Agregar Servicio</button>                      
+                        <div class="cardHeader_buttons">
+                            <button class="btn descargar" onclick="descargarPDF()">
+                                <ion-icon name="download-outline"></ion-icon>Descargar PDF
+                            </button> 
+    
+                            <button class="btn add-new" onclick="agregarServicio()">
+                                <ion-icon name="add-circle-outline"></ion-icon>Agregar Servicio</button> 
+                        
+                            </div>                     
+                    
                     </div>
 
                 
@@ -210,10 +214,9 @@
 
              
     <!-- =========== Scripts =========  -->
-    <script src="assets/js/main.js"></script>
-    <script src="services.js"></script>
-
-    <!-- ====== ionicons ======= -->
+    <script src="../assets_/js/main.js"></script>
+    
+    <!-- =========== Icons =========  -->
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
 </body>

@@ -291,7 +291,7 @@ body {
 }
 .cardHeader .btn {
   position: relative;
-  padding: 5px 15px;
+  padding: 10px 20px;
   background: var(--green);
   text-decoration: none;
   color: var(--white);
@@ -475,9 +475,7 @@ body {
 }
 
 table {
-    width: 500%;
-    height: 120%; 
-    
+    width: 500%;    
 }
 
 td, th {
@@ -496,6 +494,3 @@ th {
   font-size: 0.5 rem; 
 }
 
-.descargar{
-  margin-left: 700px;
-}
