@@ -33,9 +33,9 @@
                 <li>
                     <a href="#">
                         <span class="icon">
-                            <ion-icon name="people-outline"></ion-icon>
+                            <ion-icon name="airplane-outline"></ion-icon>                        
                         </span>
-                        <span class="title">Clientes</span>
+                        <span class="title">Destinos</span>
                     </a>
                 </li>
                 <li>
@@ -109,7 +109,7 @@
             <div class="details">
                 <div class="recentOrders">
                     <div class="cardHeader">
-                        <h1>Paquetes</h1>
+                        <h1>Destinos</h1>
                         <div class="cardHeader_buttons">
 
                             <button class="btn add-new" onclick="descargarExcel()">
@@ -119,7 +119,7 @@
                                 <ion-icon name="download-outline"></ion-icon>Descargar PDF</button> 
                                 
                             <button class="btn add-new" onclick="agregarServicio()">
-                                <ion-icon name="add-circle-outline"></ion-icon>Agregar Paquete</button>
+                                <ion-icon name="add-circle-outline"></ion-icon>Agregar Destino</button>
                                 
                         </div>
                     </div>
@@ -128,59 +128,54 @@
                     <table>
                         <thead>
                           <tr>
-                            <td>ID Paquete</td>
+                            <td>ID Destino</td>
                             <td>Nombre</td>
-                            <td>Valor</td>
                             <td>Descripción</td>
                             <td>Acciones</td>
                           </tr>
                         </thead>
                         <tbody>
-                          <!-- Ejemplo de fila, repite esta estructura para cada paquete -->
+                          <!-- Ejemplo de fila, repite esta estructura para cada destino -->
                           <tr>
                             <td>1</td>
                             <td>Bosque de Ensueño</td>
-                            <td>149.99</td>
-                            <td>Disfruta de un día en el Bosque de Ensueño, un lugar turístico rodeado de naturaleza.</td>
+                            <td>Lugar turístico rodeado de naturaleza.</td>
                             <td>
-                              <ion-icon name="create-outline" class="icon-large" onclick="editarPaquete(1)"></ion-icon>
-                              <ion-icon name="trash-outline" class="icon-large" onclick="eliminarPaquete(1)"></ion-icon>
+                              <ion-icon name="create-outline" class="icon-large" onclick="editarDestino(1)"></ion-icon>
+                              <ion-icon name="trash-outline" class="icon-large" onclick="eliminarDestino(1)"></ion-icon>
                             </td>
                           </tr>
-
+                      
                           <tr>
                             <td>2</td>
                             <td>Cerro Padre Amaya</td>
-                            <td>199.99</td>
-                            <td>Sube al Cerro Padre Amaya y disfruta de una vista panorámica de la ciudad de Medellín.</td>
+                            <td>Vista panorámica de la ciudad de Medellín.</td>
                             <td>
-                              <ion-icon name="create-outline" class="icon-large" onclick="editarPaquete(2)"></ion-icon>
-                              <ion-icon name="trash-outline" class="icon-large" onclick="eliminarPaquete(2)"></ion-icon>
+                              <ion-icon name="create-outline" class="icon-large" onclick="editarDestino(2)"></ion-icon>
+                              <ion-icon name="trash-outline" class="icon-large" onclick="eliminarDestino(2)"></ion-icon>
                             </td>
                           </tr>
-
+                      
                           <tr>
                             <td>3</td>
                             <td>Piedra Galana</td>
-                            <td>179.99</td>
-                            <td>Visita la Piedra Galana, un lugar turístico emblemático de la región.</td>
+                            <td>Lugar turístico emblemático de la región.</td>
                             <td>
-                              <ion-icon name="create-outline" class="icon-large" onclick="editarPaquete(3)"></ion-icon>
-                              <ion-icon name="trash-outline" class="icon-large" onclick="eliminarPaquete(3)"></ion-icon>
+                              <ion-icon name="create-outline" class="icon-large" onclick="editarDestino(3)"></ion-icon>
+                              <ion-icon name="trash-outline" class="icon-large" onclick="eliminarDestino(3)"></ion-icon>
                             </td>
                           </tr>
-
+                      
                           <tr>
                             <td>4</td>
                             <td>Chorro Campanas</td>
-                            <td>179.99</td>
-                            <td>Disfruta del Chorro Campanas, un lugar turístico rodeado de naturaleza.</td>
+                            <td>Lugar turístico rodeado de naturaleza.</td>
                             <td>
-                              <ion-icon name="create-outline" class="icon-large" onclick="editarPaquete(4)"></ion-icon>
-                              <ion-icon name="trash-outline" class="icon-large" onclick="eliminarPaquete(4)"></ion-icon>
+                              <ion-icon name="create-outline" class="icon-large" onclick="editarDestino(4)"></ion-icon>
+                              <ion-icon name="trash-outline" class="icon-large" onclick="eliminarDestino(4)"></ion-icon>
                             </td>
                           </tr>
-
+                      
                         </tbody>
                       </table>
                 </div>
