@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
+    <title>Recuperar contraseña</title>
+</head>
+<body>
+    <div class="container">
+        <form id="mainForm" novalidate>
+            <h2>Recuperar contraseña</h2>
+            <div class="form-control">
+                <label for="email">Email</label>
+                <div class="input-container">
+                    <input type="email" id="email" placeholder="Introduce tu correo electrónico" autocomplete="off">
+                    <i class="icon"></i>
+                </div>
+                <p class="message"></p>
+            </div>
+            <button type="submit">Siguiente</button>
+        </form>
+    </div>
+
+    <!-- Modal para el código -->
+    <div id="codeModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Introduce el código</h2>
+            <form id="codeForm" novalidate>
+                <div class="form-control">
+                    <label for="code">Código</label>
+                    <div class="input-container">
+                        <input type="text" id="code" placeholder="Introduce el código" autocomplete="off" maxlength="6">
+                        <i class="icon"></i>
+                    </div>
+                    <p class="message"></p>
+                </div>
+                <button type="submit">Verificar código</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Modal para restablecer la contraseña -->
+    <div id="resetModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Restablecer contraseña</h2>
+            <form id="resetForm" novalidate>
+                <div class="form-control">
+                    <label for="newPassword">Nueva contraseña</label>
+                    <div class="input-container">
+                        <input type="password" id="newPassword" placeholder="Introduce tu nueva contraseña">
+                        <i class="icon"></i>
+                    </div>
+                </div>
+                <div class="form-control">
+                    <label for="confirmPassword">Confirmar contraseña</label>
+                    <div class="input-container">
+                        <input type="password" id="confirmPassword" placeholder="Confirma tu nueva contraseña">
+                        <i class="icon"></i>
+                    </div>
+                    <p class="message"></p>
+                </div>
+                <button type="submit">Restablecer contraseña</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="/views/recuperarContraseña/main.js"></script>
+</body>
+</html>

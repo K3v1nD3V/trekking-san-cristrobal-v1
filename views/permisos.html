@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trekking San Cristóbal</title>
+    <!-- ======= Styles ====== -->
+    <link rel="stylesheet" href="../assets_/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+    
+    
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="/">
+                        <img style="width: 100px;" src="../public/img/IMG_0084.PNG" alt="logo de trekking san cristobal">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./clientes.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Clientes</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./usuarios.html">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="title">Usuarios</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./paquetes.html">
+                        <span class="icon">
+                            <ion-icon name="bag-outline"></ion-icon>
+                        </span>
+                        <span class="title">Paquetes</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./destinos.html">
+                        <span class="icon">
+                            <ion-icon name="airplane-outline"></ion-icon>                        
+                        </span>
+                        <span class="title">Destinos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./permisos.html">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <span class="title">Permisos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./servicios.html">
+                        <span class="icon">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                        </span>
+                        <span class="title">Servicios</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./guias.html">
+                        <span class="icon">
+                            <ion-icon name="walk-outline"></ion-icon>
+                        </span>
+                        <span class="title">Guías</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./tours.html">
+                        <span class="icon">
+                            <ion-icon name=""></ion-icon>
+                        </span>
+                        <span class="title">Tours</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pagos.html">
+                        <span class="icon">
+                            <ion-icon name=""></ion-icon>
+                        </span>
+                        <span class="title">Pagos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./facturas.html">
+                        <span class="icon">
+                            <ion-icon name=""></ion-icon>
+                        </span>
+                        <span class="title">Facturas</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Mensajes</span>
+                    </a>
+                </li>
+
+               
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Configuración</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Ayuda</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Salir</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                
+
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Buscar">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+            </div>
+
+
+
+            <!-- ================ Services List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h1>Gestión de Permisos</h1>
+
+                        <div class="cardHeader_buttons">
+
+                            <button class="btn add-new" onclick="descargarExcel()">
+                                <ion-icon name="download-outline"></ion-icon>Descargar Excel</button>
+
+                            <button class="btn descargar" onclick="descargarPDF()">
+                                <ion-icon name="download-outline"></ion-icon>Descargar PDF
+                            </button> 
+    
+                            <button class="btn add-new" onclick="agregarServicio()">
+                                <ion-icon name="add-circle-outline"></ion-icon>Agregar Servicio</button> 
+                        
+                            </div>                     
+                    
+                    </div>
+
+                
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>ID Permiso</td>
+                                <td>Nombre</td>
+                                <td>Descripción</td>
+                                <td>Estado</td>
+                                <td>Acciones</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr>
+                                <td>01</td>
+                                <td>Gestión de Usuarios</td>
+                                <td>Gestionar información de usuarios.</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>02</td>
+                                <td>Gestión de Acceso</td>
+                                <td>Gestionar accesos.</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>03</td>
+                                <td>Gestión de Servicios</td>
+                                <td>Gestionar información de los servicios.</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>04</td>
+                                <td>Gestión de Empleados</td>
+                                <td>Gestionar información de empleados.</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>05</td>
+                                <td>Gestión de Clientes</td>
+                                <td>Gestionar información de los clientes.</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>06</td>
+                                <td>Gestión de Ventas</td>
+                                <td>Gestionar información de ventas.</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarServicio('Desayuno')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarServicio('Desayuno')"></ion-icon>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+             
+    <!-- =========== Scripts =========  -->
+    <script src="../assets_/js/main.js"></script>
+    
+    <!-- =========== Icons =========  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>

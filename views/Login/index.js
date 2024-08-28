@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', function () {
     form.addEventListener('submit', function (e) {
         e.preventDefault();
         if (checkInputs()) {
-            showModal();
+            if(name.value == 'admin' && password.value == '12345678'){
+                window.location.pathname ='/views/clientes.html';
+            }
         }
     });
 

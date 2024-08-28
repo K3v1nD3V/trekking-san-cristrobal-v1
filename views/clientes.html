@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trekking San Cristóbal</title>
+    <link rel="stylesheet" href="../assets_/css/style.css">
+</head>
+
+<body>
+    <!-- =============== Navigation ================ -->
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="/">
+                        <img style="width: 100px;" src="../public/img/IMG_0084.PNG" alt="logo de trekking san cristobal">
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./clientes.html">
+                        <span class="icon">
+                            <ion-icon name="people-outline"></ion-icon>
+                        </span>
+                        <span class="title">Clientes</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./usuarios.html">
+                        <span class="icon">
+                            <ion-icon name="person-outline"></ion-icon>
+                        </span>
+                        <span class="title">Usuarios</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./paquetes.html">
+                        <span class="icon">
+                            <ion-icon name="bag-outline"></ion-icon>
+                        </span>
+                        <span class="title">Paquetes</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./destinos.html">
+                        <span class="icon">
+                            <ion-icon name="airplane-outline"></ion-icon>                        
+                        </span>
+                        <span class="title">Destinos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./permisos.html">
+                        <span class="icon">
+                            <ion-icon name="lock-closed-outline"></ion-icon>
+                        </span>
+                        <span class="title">Permisos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./servicios.html">
+                        <span class="icon">
+                            <ion-icon name="briefcase-outline"></ion-icon>
+                        </span>
+                        <span class="title">Servicios</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./guias.html">
+                        <span class="icon">
+                            <ion-icon name="walk-outline"></ion-icon>
+                        </span>
+                        <span class="title">Guías</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./tours.html">
+                        <span class="icon">
+                            <ion-icon name=""></ion-icon>
+                        </span>
+                        <span class="title">Tours</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./pagos.html">
+                        <span class="icon">
+                            <ion-icon name=""></ion-icon>
+                        </span>
+                        <span class="title">Pagos</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="./facturas.html">
+                        <span class="icon">
+                            <ion-icon name=""></ion-icon>
+                        </span>
+                        <span class="title">Facturas</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="chatbubble-outline"></ion-icon>
+                        </span>
+                        <span class="title">Mensajes</span>
+                    </a>
+                </li>
+
+               
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="settings-outline"></ion-icon>
+                        </span>
+                        <span class="title">Configuración</span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="help-outline"></ion-icon>
+                        </span>
+                        <span class="title">Ayuda</span>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="#">
+                        <span class="icon">
+                            <ion-icon name="log-out-outline"></ion-icon>
+                        </span>
+                        <span class="title">Salir</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- ========================= Main ==================== -->
+        <div class="main">
+            <div class="topbar">
+                
+                
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Buscar">
+                        <ion-icon name="search-outline"></ion-icon>
+                    </label>
+                </div>
+                <div class="toggle">
+                    <ion-icon name="menu-outline"></ion-icon>
+                </div>
+            </div>
+
+
+
+            <!-- ================ Services List ================= -->
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeader">
+                        <h1>Clientes</h1>
+                        <div class="cardHeader_buttons">
+
+                            <button class="btn add-new" onclick="descargarExcel()">
+                                <ion-icon name="download-outline"></ion-icon>Descargar Excel</button> 
+
+                            <button class="btn descargar" onclick="descargarPDF()">
+                                <ion-icon name="download-outline"></ion-icon>Descargar PDF</button> 
+                                
+                            <button class="btn add-new" onclick="mostrarFormulario()">
+                                <ion-icon name="add-circle-outline"></ion-icon>Agregar Cliente</button>
+                        </div>
+
+                    </div>
+            
+
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>ID</td>
+                                <td>Documento</td>
+                                <td>Nombre</td>
+                                <td>Apellido</td>
+                                <td>Correo</td>
+                                <td>Teléfono</td>
+                                <td>Estado</td>
+                                <td>Acciones</td>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr data-id="01">                                
+                                <td>01</td>
+                                <td>1001709975</td>
+                                <td>Ximena</td>
+                                <td>Castañeda</td>
+                                <td>ximena25@soy.sena.edu.co</td>
+                                <td>3122934309</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarCliente('01')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarCliente()"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr data-id="02">                                
+                                <td>02</td>
+                                <td>42800156</td>
+                                <td>Orbey</td>
+                                <td>Aguirre</td>
+                                <td>aguirre_orbey@soy.sena.edu.co</td>
+                                <td>3112387765</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarCliente('02')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarCliente()"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr data-id="03">
+                                <td>03</td>
+                                <td>100067980</td>
+                                <td>Ruben</td>
+                                <td>Restrepo</td>
+                                <td>rubenrestre_po@soy.sena.edu.co</td>
+                                <td>3112387765</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarCliente('03')"></ion-icon>
+                                <ion-icon name="trash-outline" class="icon-large" onclick="eliminarCliente()"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr data-id="04">
+                                <td>04</td>
+                                <td>203045897</td>
+                                <td>Rosa</td>
+                                <td>Florez</td>
+                                <td>florezRosa@soy.sena.edu.co</td>
+                                <td>3206653030</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarCliente('04')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarCliente()"></ion-icon>
+                                </td>
+                            </tr>
+
+
+                            <tr data-id="05">
+                                <td>05</td>
+                                <td>1017202889</td>
+                                <td>Daniel</td>
+                                <td>Navarro</td>
+                                <td>navarrodaniel@soy.sena.edu.co</td>
+                                <td>3005528856</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarCliente('05')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarCliente()"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr data-id="06">
+                                <td>06</td>
+                                <td>1014889456</td>
+                                <td>Dario</td>
+                                <td>Galvis</td>
+                                <td>galvissand@soy.sena.edu.co</td>
+                                <td>3112387765</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarCliente('06')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarCliente()"></ion-icon>
+                                </td>
+                            </tr>
+
+                            <tr data-id="07">
+                                <td>07</td>
+                                <td>104067445</td>
+                                <td>Maria</td>
+                                <td>Cartagena</td>
+                                <td>mariacarta_@soy.sena.edu.co</td>
+                                <td>3112387765</td>
+                                <td><span class="status delivered">Activo</span></td>
+                                <td>
+                                    <ion-icon name="create-outline" class="icon-large" onclick="editarCliente('07')"></ion-icon>
+                                    <ion-icon name="trash-outline" class="icon-large" onclick="eliminarCliente()"></ion-icon>
+                                </td>
+                            </tr>
+
+                        </tbody>
+                    </table>
+            
+                    <!-- Formulario para registrar un nuevo cliente -->
+                    <form id="registroForm" style="display: none;">
+                        <label for="id">ID:</label>
+                        <input type="text" id="id" name="id" required>
+                        
+                        <label for="documento">Documento:</label>
+                        <input type="text" id="documento" name="documento" required>
+                    
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    
+                        <label for="apellido">Apellido:</label>
+                        <input type="text" id="apellido" name="apellido" required>
+                    
+                        <label for="correo">Correo:</label>
+                        <input type="email" id="correo" name="correo" required>
+                    
+                        <label for="telefono">Teléfono:</label>
+                        <input type="text" id="telefono" name="telefono" required>
+                    
+                        <label for="estado">Estado:</label>
+                        <select id="estado" name="estado" required>
+                            <option value="Activo">Activo</option>
+                            <option value="Inactivo">Inactivo</option>
+                        </select>
+                    
+                        <button type="submit">Agregar Registro</button>
+                    </form>
+                </div>
+
+                <!-- Modal de edición -->
+    <div id="editModal" style="display: none;">
+    <div class="modal-content">
+        <span class="close-button" onclick="cerrarModal()">&times;</span>
+        <h2>Editar Cliente</h2>
+        <form id="editForm">
+            <label for="editId">ID:</label>
+            <input type="text" id="editId" name="id" readonly>
+
+            <label for="editDocumento">Documento:</label>
+            <input type="text" id="editDocumento" name="documento" required>
+
+            <label for="editNombre">Nombre:</label>
+            <input type="text" id="editNombre" name="nombre" required>
+
+            <label for="editApellido">Apellido:</label>
+            <input type="text" id="editApellido" name="apellido" required>
+
+            <label for="editCorreo">Correo:</label>
+            <input type="email" id="editCorreo" name="correo" required>
+
+            <label for="editTelefono">Teléfono:</label>
+            <input type="text" id="editTelefono" name="telefono" required>
+
+            <label for="editEstado">Estado:</label>
+            <select id="editEstado" name="estado" required>
+                <option value="Activo">Activo</option>
+                <option value="Inactivo">Inactivo</option>
+            </select>
+
+            <button type="submit">Guardar Cambios</button>
+        </form>
+    </div>
+</div>
+
+             
+    <!-- =========== Scripts =========  -->
+    <script src="../assets_/js/main.js"></script>
+    <script src="../views/JS/clientes.js"></script>
+    
+     <!-- =========== Icons =========  -->
+     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
