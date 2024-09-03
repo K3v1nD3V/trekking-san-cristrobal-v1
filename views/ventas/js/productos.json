@@ -1,0 +1,132 @@
+[
+    {
+        "id": "1",
+        "titulo": "Bosque de ensueño",
+        "imagen": "./img/01.jpg",
+        "categoria": {
+            "nombre": "",
+            "id": "abrigos"
+        },
+        "precio": 1000,
+        "guia": "Juan Pérez",
+        "servicios": [
+            {
+                "nombre": "Alimentación",
+                "descripcion": "Desayuno, almuerzo y cena incluidos"
+            },
+            {
+                "nombre": "Seguro médico",
+                "descripcion": "Cobertura médica durante el viaje"
+            },
+            {
+                "nombre": "Guía",
+                "descripcion": "Guía experimentado durante todo el recorrido"
+            }
+        ],
+        "destino": "Bosque de ensueño"
+    },
+    {
+        "id": "abrigo-02",
+        "titulo": "Cerro padre Amaya",
+        "imagen": "./img/abrigos/02.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 1000,
+        "guia": "María Rodríguez",
+        "servicios": [
+            {
+                "nombre": "Alimentación",
+                "descripcion": "Desayuno, almuerzo y cena incluidos"
+            },
+            {
+                "nombre": "Seguro médico",
+                "descripcion": "Cobertura médica durante el viaje"
+            },
+            {
+                "nombre": "Guía",
+                "descripcion": "Guía experimentado durante todo el recorrido"
+            }
+        ],
+        "destino": "Cerro padre Amaya"
+    },
+    {
+        "id": "abrigo-03",
+        "titulo": "Piedra Galana",
+        "imagen": "./img/abrigos/03.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 1000,
+        "guia": "Pedro Gómez",
+        "servicios": [
+            {
+                "nombre": "Alimentación",
+                "descripcion": "Desayuno, almuerzo y cena incluidos"
+            },
+            {
+                "nombre": "Seguro médico",
+                "descripcion": "Cobertura médica durante el viaje"
+            },
+            {
+                "nombre": "Guía",
+                "descripcion": "Guía experimentado durante todo el recorrido"
+            }
+        ],
+        "destino": "Piedra Galana"
+    },
+    {
+        "id": "abrigo-04",
+        "titulo": "Chorro campanas",
+        "imagen": "./img/abrigos/04.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 1000,
+        "guia": "Ana García",
+        "servicios": [
+            {
+                "nombre": "Alimentación",
+                "descripcion": "Desayuno, almuerzo y cena incluidos"
+            },
+            {
+                "nombre": "Seguro médico",
+                "descripcion": "Cobertura médica durante el viaje"
+            },
+            {
+                "nombre": "Guía",
+                "descripcion": "Guía experimentado durante todo el recorrido"
+            }
+        ],
+        "destino": "Chorro campanas"
+    },
+    {
+        "id": "abrigo-05",
+        "titulo": "Páramo de Belmira",
+        "imagen": "./img/abrigos/05.jpg",
+        "categoria": {
+            "nombre": "Abrigos",
+            "id": "abrigos"
+        },
+        "precio": 1000,
+        "guia": "Carlos López",
+        "servicios": [
+            {
+                "nombre": "Alimentación",
+                "descripcion": "Desayuno, almuerzo y cena incluidos"
+            },
+            {
+                "nombre": "Seguro médico",
+                "descripcion": "Cobertura médica durante el viaje"
+            },
+            {
+                "nombre": "Guía",
+                "descripcion": "Guía experimentado durante todo el recorrido"
+            }
+        ],
+        "destino": "Páramo de Belmira"
+    }
+]
