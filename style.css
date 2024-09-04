@@ -635,9 +635,12 @@ footer .right p{
         height: 220px;
     }
 
-    footer{
+    footer {
         padding: 100px 40px;
+        
+        
     }
+    
 
     footer h3{
         font-size: 38px;
@@ -694,6 +697,7 @@ footer .right p{
 
     footer .links a{
         font-size: 15px;
+        
     }
 
 }
@@ -871,3 +875,73 @@ footer .right p{
     font-size: 16px;
     color: #333;
 }
+
+
+
+
+
+
+#servicios {
+    padding: 40px 0;
+}
+
+#servicios .container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#servicios h2 {
+    text-align: left;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color:  #1e5922;
+   text-align: center;
+}
+
+.tarjetas {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.tarjeta {
+    background-color: #f8f9fa;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    max-width: 350px;
+    flex: 1;
+}
+
+.tarjeta img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+}
+
+.tarjeta .contenido {
+    padding: 20px;
+}
+
+.tarjeta h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color:  #1e5922; /* Color similar al azul oscuro */
+}
+
+.tarjeta p {
+    margin: 5px 0;
+    color: #6c757d; /* Color gris para subtítulos */
+}
+
+.tarjeta p strong {
+    color:  #1e5922; /* Color azul similar al de la imagen */
+}
+
+@media (max-width: 768px) {
+    .tarjetas {
+        flex-direction: column;
+    }
+}
+
