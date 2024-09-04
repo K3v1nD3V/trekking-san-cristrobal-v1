@@ -2,7 +2,7 @@
     {
         "id": "1",
         "titulo": "Bosque de ensueño",
-        "imagen": "./img/abrigos/01.jpg",
+        "imagen": "/views/ventas/img/R.jpg",
         "categoria": {
             "nombre": "",
             "id": "abrigos"
@@ -28,7 +28,7 @@
     {
         "id": "abrigo-02",
         "titulo": "Cerro padre Amaya",
-        "imagen": "./img/abrigos/02.jpg",
+        "imagen": "/views/ventas/img/R.jpg",
         "categoria": {
             "nombre": "Abrigos",
             "id": "abrigos"
@@ -54,7 +54,7 @@
     {
         "id": "abrigo-03",
         "titulo": "Piedra Galana",
-        "imagen": "./img/abrigos/03.jpg",
+        "imagen": "/views/ventas/img/R.jpg",
         "categoria": {
             "nombre": "Abrigos",
             "id": "abrigos"
@@ -80,7 +80,7 @@
     {
         "id": "abrigo-04",
         "titulo": "Chorro campanas",
-        "imagen": "./img/abrigos/04.jpg",
+        "imagen": "/views/ventas/img/R.jpg",
         "categoria": {
             "nombre": "Abrigos",
             "id": "abrigos"
@@ -106,7 +106,7 @@
     {
         "id": "abrigo-05",
         "titulo": "Páramo de Belmira",
-        "imagen": "./img/abrigos/05.jpg",
+        "imagen": "/views/ventas/img/R.jpg",
         "categoria": {
             "nombre": "Abrigos",
             "id": "abrigos"

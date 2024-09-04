@@ -29,7 +29,9 @@ function cargarProductos(productosElegidos) {
         const div = document.createElement("div");
         div.classList.add("producto");
         div.innerHTML = `
-            <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+            <div class="image-container">
+                <img class="producto-imagen" src="${producto.imagen}" alt="${producto.titulo}">
+            </div>
             <div class="producto-detalles">
                 <h3 class="producto-titulo">${producto.titulo}</h3>
                 <p class="producto-precio">$${producto.precio}</p>
@@ -92,7 +94,7 @@ function agregarAlCarrito(e) {
         position: "right", // `left`, `center` or `right`
         stopOnFocus: true, // Prevents dismissing of toast on hover
         style: {
-          background: "linear-gradient(to right, #4b33a8, #785ce9)",
+          background: "linear-gradient(to right, #1e5922, #3ba842)",
           borderRadius: "2rem",
           textTransform: "uppercase",
           fontSize: ".75rem"

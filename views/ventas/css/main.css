@@ -7,6 +7,24 @@
     --clr-gray: #e2e2e2;
     --clr-red: #961818;
 }
+.swal2-confirm{
+    background-color: #1e5922 !important;
+}
+
+div:where(.swal2-icon).swal2-question {
+    border-color: #1e5922 !important;
+    color: #1e5922 !important;
+}
+
+.image-container{
+    height: 100px;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(0.5);
+    border-radius: 1rem;
+}
 
 * {
     margin: 0;
