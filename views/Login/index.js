@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', function () {
         if (checkInputs()) {
             if(name.value == 'admin' && password.value == '12345678'){
                 window.location.pathname ='/views/clientes.html';
+            }else if (name.value == 'usuario' && password.value == '12345678') {
+                window.location.pathname ='/views/ventas/index.html';
             }
         }
     });
