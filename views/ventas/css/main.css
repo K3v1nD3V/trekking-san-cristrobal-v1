@@ -429,10 +429,86 @@ main {
 
 }
 
-
-
 @media screen and (max-width: 400px) {
     .contenedor-productos {
         grid-template-columns: 1fr;
+    }
+}
+
+/* -------------------------------------detalles ------------------------------------------ */
+
+.producto-detalles-boton {
+    border: 0;
+    background-color: var(--clr-white);
+    color: var(--clr-main);
+    padding: .4rem;
+    text-transform: uppercase;
+    border-radius: 2rem;
+    cursor: pointer;
+    border: 2px solid var(--clr-white);
+    transition: background-color .2s, color .2s;
+}
+
+.producto-detalles-boton:hover {
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+}
+
+.producto-detalle {
+    display: flex;
+    align-items: flex-start;
+    gap: 2rem;
+}
+
+.producto-detalle-imagen {
+    max-width: 400px; 
+    border-radius: 1rem;
+}
+
+.producto-detalle-info {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.producto-detalle-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.producto-detalle-info p,
+.producto-detalle-info ul {
+    margin-bottom: .5rem;
+}
+
+.producto-detalle-info button {
+    margin-top: 1rem;
+    padding: .5rem 1rem;
+    background-color: var(--clr-main);
+    color: var(--clr-white);
+    border: none;
+    border-radius: .5rem;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+
+.producto-detalle-info button:hover {
+    background-color: var(--clr-main-light);
+}
+
+@media screen and (max-width: 768px) {
+    .producto-detalle {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto-detalle-imagen {
+        max-width: 200px;
+        margin-bottom: 1rem;
+    }
+
+    .producto-detalle-info {
+        text-align: center;
     }
 }

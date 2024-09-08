@@ -36,14 +36,27 @@ function cargarProductos(productosElegidos) {
                 <h3 class="producto-titulo">${producto.titulo}</h3>
                 <p class="producto-precio">$${producto.precio}</p>
                 <button class="producto-agregar" id="${producto.id}">Agregar</button>
-                <button class="producto-agregar" id="${producto.id}">Detalles</button>
+                <!-- Botón de detalles que redirige mediante JavaScript -->
+                <button class="producto-detalles-boton" data-id="${producto.id}">Detalles</button>
             </div>
         `;
 
         contenedorProductos.append(div);
-    })
+    });
 
     actualizarBotonesAgregar();
+    asignarEventosDetalles();
+}
+
+function asignarEventosDetalles() {
+    const botonesDetalles = document.querySelectorAll(".producto-detalles-boton");
+
+    botonesDetalles.forEach(boton => {
+        boton.addEventListener("click", (e) => {
+            const productoId = e.currentTarget.getAttribute("data-id");
+            window.location.href = `detalles.html?id=${productoId}`;
+        });
+    });
 }
 
 
